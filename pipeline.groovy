@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent node-01
     stages {
         stage ('pull') {
             steps{
