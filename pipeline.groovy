@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ('pull') {
             steps{
-                git 'https://github.com/VishalWarhade/project.git'
+                git branch: 'main', url: 'https://github.com/VishalWarhade/project.git'
             }
         }
         
