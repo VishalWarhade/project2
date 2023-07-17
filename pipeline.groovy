@@ -1,5 +1,5 @@
 pipeline {
-    agent node-01
+    agent id_rsa
     stages {
         stage ('pull') {
             steps{
