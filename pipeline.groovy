@@ -9,7 +9,7 @@ pipeline {
         
         stage ('deploy') {
             steps {
-                sh 'mv /home/centos/workspace/job1/index.html /usr/share/nginx/html/index.html'
+                sh 'scp /var/lib/jenkins/workspace/job2/index.html root@172.31.40.255:/usr/share/nginx/html/index.html'
             }
         }
         stage ('restart nginx') {
